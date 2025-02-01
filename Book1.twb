@@ -1,0 +1,1810 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='ImpactofRentonIncomeAccordingtoEducationLevels' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (Inc_Exp_Data)' inline='true' name='federated.1mexcgk1f4h07m1bq69xh0i2k9wv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Inc_Exp_Data' name='excel-direct.0d5edkm1qx2hx81by8nro1c1aqua'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/DELL2025/Downloads/Inc_Exp_Data.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0d5edkm1qx2hx81by8nro1c1aqua' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:G51:no:A1:G51:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Mthly_HH_Income' ordinal='0' />
+            <column datatype='integer' name='Mthly_HH_Expense' ordinal='1' />
+            <column datatype='integer' name='No_of_Fly_Members' ordinal='2' />
+            <column datatype='integer' name='Emi_or_Rent_Amt' ordinal='3' />
+            <column datatype='integer' name='Annual_HH_Income' ordinal='4' />
+            <column datatype='string' name='Highest_Qualified_Member' ordinal='5' />
+            <column datatype='integer' name='No_of_Earning_Members' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G51:no:A1:G51:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mthly_HH_Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mthly_HH_Income]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Mthly_HH_Income</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_5F3BA0EB5CD343B6AA43316A31ED1971]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mthly_HH_Expense</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mthly_HH_Expense]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Mthly_HH_Expense</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_5F3BA0EB5CD343B6AA43316A31ED1971]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No_of_Fly_Members</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[No_of_Fly_Members]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>No_of_Fly_Members</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_5F3BA0EB5CD343B6AA43316A31ED1971]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Emi_or_Rent_Amt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Emi_or_Rent_Amt]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Emi_or_Rent_Amt</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_5F3BA0EB5CD343B6AA43316A31ED1971]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual_HH_Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Annual_HH_Income]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Annual_HH_Income</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_5F3BA0EB5CD343B6AA43316A31ED1971]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Highest_Qualified_Member</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Highest_Qualified_Member]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Highest_Qualified_Member</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LAR_REG_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_5F3BA0EB5CD343B6AA43316A31ED1971]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No_of_Earning_Members</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[No_of_Earning_Members]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>No_of_Earning_Members</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_5F3BA0EB5CD343B6AA43316A31ED1971]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Emi_or_Rent_Amt:qk]&quot;' value='Avg Rent' />
+          <alias key='&quot;[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Mthly_HH_Expense:qk]&quot;' value='Avg expense' />
+          <alias key='&quot;[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Mthly_HH_Income:qk]&quot;' value='Avg Income' />
+          <alias key='&quot;[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[sum:Mthly_HH_Expense:qk]&quot;' value='Avg Expense' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Emi_or_Rent_Amt]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Mthly_HH_Expense]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Mthly_HH_Income]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='No_of_Earning_Members (copy)' datatype='integer' name='[No_of_Earning_Members (copy)_843017597762584580]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[No_of_Earning_Members]' />
+      </column>
+      <column aggregation='Sum' caption='No_of_Fly_Members (copy)' datatype='integer' name='[No_of_Fly_Members (copy)_843017597765615624]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[No_of_Fly_Members]' />
+      </column>
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_5F3BA0EB5CD343B6AA43316A31ED1971]' role='measure' type='quantitative' />
+      <column-instance column='[Emi_or_Rent_Amt]' derivation='Avg' name='[avg:Emi_or_Rent_Amt:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Mthly_HH_Expense]' derivation='Avg' name='[avg:Mthly_HH_Expense:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Mthly_HH_Income]' derivation='Avg' name='[avg:Mthly_HH_Income:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Mthly_HH_Expense]' derivation='Sum' name='[sum:Mthly_HH_Expense:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/DELL2025/AppData/Local/Temp/TableauTemp/#TableauTemp_1io23e10e55uxa13o12pl0ywpckj.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='02/01/2025 05:45:28 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Mthly_HH_Income</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mthly_HH_Income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mthly_HH_Income</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>37</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_5F3BA0EB5CD343B6AA43316A31ED1971]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mthly_HH_Expense</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mthly_HH_Expense]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mthly_HH_Expense</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_5F3BA0EB5CD343B6AA43316A31ED1971]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>No_of_Fly_Members</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[No_of_Fly_Members]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>No_of_Fly_Members</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_5F3BA0EB5CD343B6AA43316A31ED1971]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Emi_or_Rent_Amt</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Emi_or_Rent_Amt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Emi_or_Rent_Amt</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_5F3BA0EB5CD343B6AA43316A31ED1971]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Annual_HH_Income</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Annual_HH_Income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Annual_HH_Income</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>49</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_5F3BA0EB5CD343B6AA43316A31ED1971]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Highest_Qualified_Member</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Highest_Qualified_Member]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Highest_Qualified_Member</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LAR_RSA' />
+              <object-id>[Sheet1_5F3BA0EB5CD343B6AA43316A31ED1971]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>No_of_Earning_Members</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[No_of_Earning_Members]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>No_of_Earning_Members</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_5F3BA0EB5CD343B6AA43316A31ED1971]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Mthly_HH_Income:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[usr:Calculation_843017597763903495:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Mthly_HH_Expense:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Emi_or_Rent_Amt:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[sum:Mthly_HH_Expense:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <date-options start-of-week='saturday' />
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_5F3BA0EB5CD343B6AA43316A31ED1971'>
+            <properties context=''>
+              <relation connection='excel-direct.0d5edkm1qx2hx81by8nro1c1aqua' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:G51:no:A1:G51:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Mthly_HH_Income' ordinal='0' />
+                  <column datatype='integer' name='Mthly_HH_Expense' ordinal='1' />
+                  <column datatype='integer' name='No_of_Fly_Members' ordinal='2' />
+                  <column datatype='integer' name='Emi_or_Rent_Amt' ordinal='3' />
+                  <column datatype='integer' name='Annual_HH_Income' ordinal='4' />
+                  <column datatype='string' name='Highest_Qualified_Member' ordinal='5' />
+                  <column datatype='integer' name='No_of_Earning_Members' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Avg Monthly Saving according to family size'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Avg Monthly Saving according to family size</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Inc_Exp_Data)' name='federated.1mexcgk1f4h07m1bq69xh0i2k9wv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mexcgk1f4h07m1bq69xh0i2k9wv'>
+            <column caption='AVG([Mthly_HH_Income])-AVG([Mthly_HH_Expense])' datatype='real' name='[Calculation_843017597763903495]' role='measure' type='quantitative' user:unnamed='Sheet 3'>
+              <calculation class='tableau' formula='AVG([Mthly_HH_Income])-AVG([Mthly_HH_Expense])' />
+            </column>
+            <column datatype='integer' name='[Mthly_HH_Expense]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Mthly_HH_Income]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='No_of_Fly_Members (copy)' datatype='integer' name='[No_of_Fly_Members (copy)_843017597765615624]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='[No_of_Fly_Members]' />
+            </column>
+            <column datatype='integer' name='[No_of_Fly_Members]' role='measure' type='quantitative' />
+            <column-instance column='[No_of_Fly_Members (copy)_843017597765615624]' derivation='None' name='[none:No_of_Fly_Members (copy)_843017597765615624:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_843017597763903495]' derivation='User' name='[usr:Calculation_843017597763903495:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[none:No_of_Fly_Members (copy)_843017597765615624:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[usr:Calculation_843017597763903495:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[usr:Calculation_843017597763903495:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[usr:Calculation_843017597763903495:qk]</rows>
+        <cols>[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[none:No_of_Fly_Members (copy)_843017597765615624:ok]</cols>
+      </table>
+      <simple-id uuid='{E3257E25-5912-42B2-BF75-5E003D753ECF}' />
+    </worksheet>
+    <worksheet name='Impact of Rent on Income According to Education Levels'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book'>Impact of Rent on Income According to Education Levels</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Inc_Exp_Data)' name='federated.1mexcgk1f4h07m1bq69xh0i2k9wv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mexcgk1f4h07m1bq69xh0i2k9wv'>
+            <column datatype='integer' name='[Emi_or_Rent_Amt]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Highest_Qualified_Member]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Mthly_HH_Income]' role='measure' type='quantitative' />
+            <column-instance column='[Emi_or_Rent_Amt]' derivation='Avg' name='[avg:Emi_or_Rent_Amt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mthly_HH_Income]' derivation='Avg' name='[avg:Mthly_HH_Income:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Highest_Qualified_Member]' derivation='None' name='[none:Highest_Qualified_Member:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[none:Highest_Qualified_Member:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Emi_or_Rent_Amt:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <encoding attr='space' class='0' field='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Mthly_HH_Income:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Mthly_HH_Income:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Emi_or_Rent_Amt:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='border-width' data-class='total' value='1' />
+            <format attr='border-style' data-class='total' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='border-width' data-class='total' value='1' />
+            <format attr='border-style' data-class='total' value='solid' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]' value=''>
+              <formatted-text />
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Emi_or_Rent_Amt:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Mthly_HH_Income:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Emi_or_Rent_Amt:qk] + [federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Mthly_HH_Income:qk])</rows>
+        <cols>[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[none:Highest_Qualified_Member:nk]</cols>
+      </table>
+      <simple-id uuid='{3C8D4EC5-9005-475D-94C1-7D18C25C89EB}' />
+    </worksheet>
+    <worksheet name='Impact of Rent on Income According to Number of earners'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book'>Impact of Rent on Income According to Number of Earners</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Inc_Exp_Data)' name='federated.1mexcgk1f4h07m1bq69xh0i2k9wv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mexcgk1f4h07m1bq69xh0i2k9wv'>
+            <column datatype='integer' name='[Emi_or_Rent_Amt]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Mthly_HH_Income]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='No_of_Earning_Members (copy)' datatype='integer' name='[No_of_Earning_Members (copy)_843017597762584580]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='[No_of_Earning_Members]' />
+            </column>
+            <column datatype='integer' name='[No_of_Earning_Members]' role='measure' type='quantitative' />
+            <column-instance column='[Emi_or_Rent_Amt]' derivation='Avg' name='[avg:Emi_or_Rent_Amt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mthly_HH_Income]' derivation='Avg' name='[avg:Mthly_HH_Income:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[No_of_Earning_Members (copy)_843017597762584580]' derivation='None' name='[none:No_of_Earning_Members (copy)_843017597762584580:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[none:No_of_Earning_Members (copy)_843017597762584580:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Emi_or_Rent_Amt:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <encoding attr='space' class='0' field='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Mthly_HH_Income:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Mthly_HH_Income:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Emi_or_Rent_Amt:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='border-width' data-class='total' value='1' />
+            <format attr='border-style' data-class='total' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='border-width' data-class='total' value='1' />
+            <format attr='border-style' data-class='total' value='solid' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]' value=''>
+              <formatted-text />
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Emi_or_Rent_Amt:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Mthly_HH_Income:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Emi_or_Rent_Amt:qk] + [federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Mthly_HH_Income:qk])</rows>
+        <cols>[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[none:No_of_Earning_Members (copy)_843017597762584580:ok]</cols>
+      </table>
+      <simple-id uuid='{2F2A4D10-49F6-46A2-97B3-B904631155DB}' />
+    </worksheet>
+    <worksheet name='Impact of expense on Income According to Number of earners '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book'>Impact of Expenses on Income According to Number of Earners</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Inc_Exp_Data)' name='federated.1mexcgk1f4h07m1bq69xh0i2k9wv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mexcgk1f4h07m1bq69xh0i2k9wv'>
+            <column datatype='integer' name='[Mthly_HH_Expense]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Mthly_HH_Income]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='No_of_Earning_Members (copy)' datatype='integer' name='[No_of_Earning_Members (copy)_843017597762584580]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='[No_of_Earning_Members]' />
+            </column>
+            <column datatype='integer' name='[No_of_Earning_Members]' role='measure' type='quantitative' />
+            <column-instance column='[Mthly_HH_Expense]' derivation='Avg' name='[avg:Mthly_HH_Expense:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mthly_HH_Income]' derivation='Avg' name='[avg:Mthly_HH_Income:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[No_of_Earning_Members (copy)_843017597762584580]' derivation='None' name='[none:No_of_Earning_Members (copy)_843017597762584580:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[none:No_of_Earning_Members (copy)_843017597762584580:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Mthly_HH_Expense:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <encoding attr='space' class='0' field='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Mthly_HH_Income:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Mthly_HH_Income:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Mthly_HH_Expense:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='border-width' data-class='total' value='1' />
+            <format attr='border-style' data-class='total' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='border-width' data-class='total' value='1' />
+            <format attr='border-style' data-class='total' value='solid' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]' value=''>
+              <formatted-text />
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Mthly_HH_Expense:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Mthly_HH_Income:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Mthly_HH_Expense:qk] + [federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[avg:Mthly_HH_Income:qk])</rows>
+        <cols>[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[none:No_of_Earning_Members (copy)_843017597762584580:ok]</cols>
+      </table>
+      <simple-id uuid='{C1C9AF9E-BB09-440C-8F01-D1F2DCD6E493}' />
+    </worksheet>
+    <worksheet name='Number of Earners according to education level'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Number of Earners according to education level</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Inc_Exp_Data)' name='federated.1mexcgk1f4h07m1bq69xh0i2k9wv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mexcgk1f4h07m1bq69xh0i2k9wv'>
+            <column datatype='string' name='[Highest_Qualified_Member]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[No_of_Earning_Members]' role='measure' type='quantitative' />
+            <column-instance column='[Highest_Qualified_Member]' derivation='None' name='[none:Highest_Qualified_Member:nk]' pivot='key' type='nominal' />
+            <column-instance column='[No_of_Earning_Members]' derivation='Sum' name='[sum:No_of_Earning_Members:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[none:Highest_Qualified_Member:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[sum:No_of_Earning_Members:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[sum:No_of_Earning_Members:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[sum:No_of_Earning_Members:qk]</rows>
+        <cols>[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[none:Highest_Qualified_Member:nk]</cols>
+      </table>
+      <simple-id uuid='{46DA421D-A259-4376-8549-C54789EA0C49}' />
+    </worksheet>
+    <worksheet name='Saving according to Number of earners'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Saving according to Number of Earners</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Inc_Exp_Data)' name='federated.1mexcgk1f4h07m1bq69xh0i2k9wv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mexcgk1f4h07m1bq69xh0i2k9wv'>
+            <column caption='AVG([Mthly_HH_Income])-AVG([Mthly_HH_Expense])' datatype='real' name='[Calculation_843017597763903495]' role='measure' type='quantitative' user:unnamed='Sheet 3'>
+              <calculation class='tableau' formula='AVG([Mthly_HH_Income])-AVG([Mthly_HH_Expense])' />
+            </column>
+            <column datatype='integer' name='[Mthly_HH_Expense]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Mthly_HH_Income]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='No_of_Earning_Members (copy)' datatype='integer' name='[No_of_Earning_Members (copy)_843017597762584580]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='[No_of_Earning_Members]' />
+            </column>
+            <column datatype='integer' name='[No_of_Earning_Members]' role='measure' type='quantitative' />
+            <column-instance column='[No_of_Earning_Members (copy)_843017597762584580]' derivation='None' name='[none:No_of_Earning_Members (copy)_843017597762584580:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_843017597763903495]' derivation='User' name='[usr:Calculation_843017597763903495:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[none:No_of_Earning_Members (copy)_843017597762584580:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[usr:Calculation_843017597763903495:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[usr:Calculation_843017597763903495:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[usr:Calculation_843017597763903495:qk]</rows>
+        <cols>[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[none:No_of_Earning_Members (copy)_843017597762584580:ok]</cols>
+      </table>
+      <simple-id uuid='{F4B538C4-8292-43DD-A967-F49E305E553D}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98170' id='7' param='horz' type-v2='layout-flow' w='99064' x='468' y='915'>
+            <zone h='98170' id='5' type-v2='layout-basic' w='99064' x='468' y='915'>
+              <zone h='43479' id='3' name='Impact of Rent on Income According to Education Levels' w='31129' x='68403' y='915'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='51030' id='9' name='Saving according to Number of earners' w='32826' x='468' y='48055'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='51030' id='11' name='Impact of Rent on Income According to Number of earners' w='30895' x='68637' y='48055'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='3661' id='12' param='horz' type-v2='layout-flow' w='99064' x='468' y='44394' />
+              <zone h='43479' id='13' param='vert' type-v2='layout-flow' w='1756' x='66647' y='915' />
+              <zone h='51030' id='14' param='vert' type-v2='layout-flow' w='1990' x='66647' y='48055' />
+              <zone h='51030' id='15' name='Impact of expense on Income According to Number of earners ' w='31129' x='35518' y='48055'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43479' id='18' name='Number of Earners according to education level' w='31071' x='35576' y='915'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43479' id='19' param='vert' type-v2='layout-flow' w='35108' x='468' y='915'>
+                <zone h='43479' id='10' name='Avg Monthly Saving according to family size' w='35108' x='468' y='915'>
+                  <layout-cache minheight='164' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='51030' id='20' param='vert' type-v2='layout-flow' w='2224' x='33294' y='48055' />
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6636' id='16' name='Impact of expense on Income According to Number of earners ' pane-specification-id='1' param='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]' type-v2='color' w='8192' x='57812' y='55492' />
+        <zone h='6636' id='17' name='Impact of Rent on Income According to Number of earners' pane-specification-id='1' param='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]' type-v2='color' w='8192' x='87829' y='54691' />
+        <zone h='6636' id='8' name='Impact of Rent on Income According to Education Levels' pane-specification-id='1' param='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]' type-v2='color' w='8192' x='88824' y='5721' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1950' minheight='1950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='36' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98170' id='35' param='vert' type-v2='layout-flow' w='99064' x='468' y='915'>
+                <zone fixed-size='280' h='43479' id='10' is-fixed='true' name='Avg Monthly Saving according to family size' w='35108' x='468' y='915'>
+                  <layout-cache minheight='164' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43479' id='18' is-fixed='true' name='Number of Earners according to education level' w='31071' x='35576' y='915'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43479' id='3' is-fixed='true' name='Impact of Rent on Income According to Education Levels' w='31129' x='68403' y='915'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6636' id='8' name='Impact of Rent on Income According to Education Levels' pane-specification-id='1' param='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]' type-v2='color' w='8192' x='88824' y='5721'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='51030' id='9' is-fixed='true' name='Saving according to Number of earners' w='32826' x='468' y='48055'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='51030' id='15' is-fixed='true' name='Impact of expense on Income According to Number of earners ' w='31129' x='35518' y='48055'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6636' id='16' name='Impact of expense on Income According to Number of earners ' pane-specification-id='1' param='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]' type-v2='color' w='8192' x='57812' y='55492'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='51030' id='11' is-fixed='true' name='Impact of Rent on Income According to Number of earners' w='30895' x='68637' y='48055'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6636' id='17' name='Impact of Rent on Income According to Number of earners' pane-specification-id='1' param='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]' type-v2='color' w='8192' x='87829' y='54691'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D3DA9571-E263-46F6-A190-56EB37AFF285}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Impact of Rent on Income According to Education Levels' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='245'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight field='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]'>
+          <bucket-selection />
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D46C8CB9-002E-4B7B-B185-FA489F71B6B4}' />
+    </window>
+    <window class='worksheet' name='Saving according to Number of earners' tab-color='#17927d'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[none:Highest_Qualified_Member:nk]</field>
+            <field>[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[none:No_of_Earning_Members (copy)_843017597762584580:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D47B5CCF-A261-47B4-8D50-EDA603410852}' />
+    </window>
+    <window class='worksheet' name='Avg Monthly Saving according to family size' tab-color='#17927d'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[none:Highest_Qualified_Member:nk]</field>
+            <field>[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[none:No_of_Earning_Members (copy)_843017597762584580:ok]</field>
+            <field>[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[none:No_of_Fly_Members (copy)_843017597765615624:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8D585F11-5504-4A53-AA68-99CA4A8FC98C}' />
+    </window>
+    <window class='worksheet' name='Impact of Rent on Income According to Number of earners' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='245'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[none:No_of_Earning_Members (copy)_843017597762584580:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{08DF8B0D-403F-4FA7-A7F1-C11634B78989}' />
+    </window>
+    <window class='worksheet' name='Impact of expense on Income According to Number of earners ' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='245'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[none:No_of_Earning_Members (copy)_843017597762584580:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DCD95081-781D-405C-9049-B39515156B52}' />
+    </window>
+    <window class='worksheet' name='Number of Earners according to education level' tab-color='#17927d'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[none:Highest_Qualified_Member:nk]</field>
+            <field>[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[none:No_of_Earning_Members (copy)_843017597762584580:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E1D39F4D-DB14-4DAD-A9DE-01D9A5200928}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Avg Monthly Saving according to family size'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Impact of Rent on Income According to Education Levels'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Impact of Rent on Income According to Number of earners'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Impact of expense on Income According to Number of earners '>
+          <zoom type='entire-view' />
+          <highlight field='[federated.1mexcgk1f4h07m1bq69xh0i2k9wv].[:Measure Names]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Number of Earners according to education level'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Saving according to Number of earners'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{2010E9D6-FF92-40CE-81B5-D3A7DB5EE836}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Avg Monthly Saving according to family size' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAGz0lEQVR4nO3cy24caRmH8X+V254++JA+xWk7mWQykZgdA0KKRmLBbFlxC4PEfcCCDVsk
+      boA1EtJcAtIIIVYQGEIS49iONR637T6Xq+vwscioAtjxWNjd5dT7/Ja2435b3U/X14769Zxz
+      ToBRft4DAHm6VABJkogLBYqIKwBMIwCYRgAwjQBgGgHANAKAaQQA00pX/QXjYKr9o+F1zDIz
+      9ZWKWmvVvMfADXTlAP62fahf/vYP1zHLzPzkh9/RZz/+Xt5j4AbiCATTCACmEQBMIwCYRgAw
+      jQBgGgHAtOz/ASaDE+1+daTWrWUdjyN12nVFUaR6vZ7nfMBMZVeA98oVhcFI3ZO+fE/a236m
+      3ihUmqZK0zTPGYGZyQIYj4dy8lSr1jQaDLTW3pCfTuX5vnyfkxKKKTsCrdbb+m69LUm6e+9u
+      bgMB88RLO0wjAJhGADCNAGAaAcA0AoBpBADTCACmEQBMIwCYRgAwjQBgGgHANAKAaVfeDFdk
+      v/7dn3TYH+c9xoV+/tmP5Hte3mO8swjgAv/Y6WrvcJD3GBdzknj+/984AsE0AoBpBADTCACm
+      ZW+Cx/1jPX+5p9WVZQ2DSHdadYXhVPf4gDwKLLsClKtV+XKKUl+t5Yq+PnilyC2wFwiF9mYz
+      3Gikxfeqaq5W1JtEuv/gkaIoer0XyLk8ZwRmJgtgpd7SR/WWJKmZ2zjAfPEmGKYRAEwjAJhG
+      ADCNAGAaAcA0AoBpBADTCACmEQBMIwCYRgAwjQBgGlshDEpTp+EkzHuMC5UWfNUqS7O/nZnf
+      Am6c7mCin/3q87zHuNDHj9b1i59+OvPb4QgE0wgAphEATCMAmEYAMO3NVojBiZ5uvVStUpW3
+      VNFKuaTTaaQH99/Pcz5gprIA/NKCbq9vqORC7X/dUzROVF5dz/YC+T4XCxRPFkAYBBoMBmo3
+      VnWr0dDtZl1xzF4gFFsWwFpzXWvNdUlSK7dxgPniXAPTCACmEQBMIwCYRgAwjQBgGgHANAKA
+      aQQA0wgAphEATCMAmEYAMI21KCiU4STUUT+49M8TAArliye7+s3v/3zpn+cIBNMIAKYRAEwj
+      AJiWvQl2zsk5J8/z5CR533zd87zz/yVQAFkAwbCnpy/+pUqlqiBM1G6uKZzG+vDhgxzHA2br
+      zRHI83Rn474q5bIaK1X1+0fyFpayvUBAEWVXgCSO1e+daLPT1jCI9eFGR3EcsxcIhZYFsFJv
+      6aP6641AK6u5zQPMFX8FgmkEANMIAKYRAEwjAJhGADCNAGAaAcA0AoBpBADTCACmEQBMIwCY
+      RgAwjQBgGgHANAKAaQQA0wgApmWfCY6npzoZBir7ib7qBdpcbypJYq3wAWEU2H+sRfEVngY6
+      7Ha1tLiona1n6vYmrEVBoWUBhMFYuzu7qtSW1T040HKjpTQKXq9F8TkpoZiyI1Btta5PPnks
+      Seps3M1tIGCeeGmHaQQA0wgAphEATCMAmEYAMI0AYBoBwDQCgGkEANMIAKYRAEwjAJhGADCN
+      AGAaAcA0AoBpBADTCACmEQBMyz4UH05GOh6danlROhyGut1YUxRFqtfrec4HzFR2BVgsV5XG
+      kXrDicou0fb2M/VGIXuBUGhZAMGor73dV4rjqbqjQO32hrx0yl4gFNp/7QV6/PgHec4CzB0v
+      7TCNAGAaAcA0AoBpBADTCACmEQBMIwCYRgAwjQBgGgHANAKAaQQA0wgAphEATCMAmEYAMI0A
+      YBoBwDQCgGml//3C8cG+jibJN3uBpmq1WnnMBczFmSvA+DRQmsTa33mh4WnCXiAU2pkAatWq
+      onCqZueeFhWzFwiFduYI1Gh31Gh38pgFmDte2mEaAcA0AoBpBADTCACmEQBMIwCYRgAwjQBg
+      GgHANAKAaQQA0wgAphEATCMAmEYAMI0AYBoBwLQzH4nc3X6u7iDU7eYthdNIDz94MP+pgDk5
+      cwVwXknNlZp6J13JX8pjJmBuzlwB2s26joahHt5ZVxzHcnlMBcyJ55y78DmepqmSJHnrapRu
+      f6K/vDiYyXDX5f31NT3abJz7PeecPM8793t//PueJqfRLEe7sk+//4HOn/7t9+10GuuLJ7uz
+      HeyKGqsVffzozrnfu+gxe9Ud6ulO99K3860BSK8j8DzvrTf6LkvTtJB7j5xzcs4V8r5d52N2
+      qd/i+/6cnvxOey+39OU/t+Z29JrXEySeDvXkr1/qNJrPlj3P8+Z231wa69nzrbnclnS9j9kN
+      e3nwtLm5oVqt9tbL+rsqCSaaOqc0Ld67qoP9Vwqnib79LHHz3LAApOPjvjqd9bzHuH6liiql
+      VNMoyXuSa7dQKikMxkrewQD+DWnN0X24Hl+SAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      +/9juJxpvV6XswAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Impact of Rent on Income According to Education Levels' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Impact of Rent on Income According to Number of earners' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Impact of expense on Income According to Number of earners ' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAR20lEQVR4nO3d6Vdc533A8e+dOzsDAwzDIoGQhISENtCCJTteYseOEidqljY96RKftuf0
+      v+iL9s/oqy7HOU2aJo5z7DR2nMiWbNmSQQtaQOwIhFhmgQFmv8/TFxglcZV4kICZ4f4+5+id
+      hB4N+nK3373X0FprhLApR7EXIEQxbUgAlmVtxJcRYsvJFkDYmgQgbE0CELYmAQhbkwCErUkA
+      wtYkAGFrzkJ+k1YWgwP9NDTvYHRwkvrmJjw6T0WoAb/b3Ow1Pra1i9yGYRR5JaJUFbQFUFaW
+      peUUiVgc02OSiMe4NxPD63KU9EWwsQcL/Mu/f8D718bJ5Ut3naJ4jEJmgbRW3Bsbwe0LkFhc
+      oCrUSJXHQLsrCHhdWJaFaZbelkBrzVIqy1uXBrk2NMNLJ/bwlRN7cLtKb62iOAoK4IuUagC/
+      bzmV5YPr41y4MUHX/iZePbOfYIWn2MsSRWabANZkcxYf3Zrkvd5R9jbV8PXT+9hRV1nsZYki
+      sV0AayxL0Tc6yy8+GiRY4eE7zx1kV0NQDphtxrYBrLGUYnAyyjtXRlhJZfnmM+0c2VuP6ZAz
+      xHZg+wDWaK2ZnEvw5kd3WVhK8/KpPZxs3yEHzNucBPAIsUSK/708xI2RWV451cbznbvwuAq6
+      ZCLKjATwJyRWMvzm6hg9A/fp3NfI2e42ggFvsZclNpAEUIBs3uKD6xP8pneUQ7vDfP30PuqC
+      fjlg3gYkgHVQStM7+IC3Lg1SU+nlL758iJ11lRJCGZMAHoPWmtvj87z98RBaa149s59jbQ3F
+      XpZ4DAUHEI/M4fIHWV6MURsKYaKxHE7cTtN2AazRWjMdWeKnH/Qzv5jkm8+0031wBw7ZIpSN
+      ggJQ+Qy9vddp3VFP2uUh8iCO221y8GA7Bqt/3I4BrNFaE02keOfKCNeHZ/hq915e6Nwtp1DL
+      QGEBWFlu3byNYeUxKgIo5SLg0jTu2oPPbaKUsnUAa7TWLCWzvNszwtW7DzhxoIlXTu6VM0cl
+      rMBdIE0mncF0ucllM7g9HhyAAkyHw7a7QH9KJpfn4o17vNc7ypE99Zx9qo1wdUWxlyU+Rw6C
+      N1kub3FtaIZ3roxQVeHh288dpLUhWOxlic9IAFtEKc2tsTne/mQIt9Pk7FNtdLTWycxRkUkA
+      W2xt5uiNiwPEl1Kce6adrn2NmKaEUAwSQBHNxJZ558owQ1MxXuhqlTNHRSABlIDFlTTvXBmh
+      9+4Dnj3awgtdu6mSu9W2hARQQrI5iws3JvjVlWG69jXyjaf3Ux3wyqjFJpIASpBlKS7dnuK9
+      nlHC1X6+89xBdoarir2sbUkCKGFar545euPiAD63i289e4D2llCxl7WtSABlQGvNvbkEP7/Q
+      TzSR4rvPd9C5r0F2jTaABFBGtNbMxJZ5++MhJmYXefH4br50tEXuVnsChQWgFQN3blPfvJPJ
+      kSnCzTvwGgpvMITfbd9p0GJaXEnz9sdD9I3M8kLXbp47touAz13sZZWdwp4Mpyz679yipqaa
+      B/MJKvxeVpIZujoPo5UC7D0NWkzJdI4LfRNcuD7B4T31vHpmPzWVMnxXqAIDyDM6PIw3UMVy
+      YgFfVR1BrwPTHyzpRyPaSSaX59KtSS7cuMeOUICvnd5HS73MHH0ROQbYZpTS9I3O8uaHdwlW
+      ePizLx1gT1O1HDD/ERLANqW1Zvh+jF9+MkxiJcO5Z9o52iYP/Po8CcAGpuYTvHVpkAfRZb5y
+      cg9nDjXLzNFnJAAbWVxO88tPhugdfMArp/byQtduvG57n0KVAGxoJZ3l/LVxPuy7x9G9DZx7
+      pt22w3cSgI3lLcWFGxP8umeUfTtr+MbT7TTWBoq9rC0lAYiHd6v99EI/Qb+HP/9yB60N1cVe
+      1paQAMRDSmuGp2L87EI/lX4Pf/vVowQrtvdFNQlA/D9Ka3oGpnnj4gDPHdvFK6f24nJuz++v
+      BCD+qEwuz88v3uX2+Bzff+kIHa112+6CWsHPBUosLuDyVpDLpPFXVOBAo3DgNOW5QNvddGSJ
+      H/32Fi7TwV+9fJS6oL/YS9owBc8CXb9+g5bGMJFUhnRKU+Ey2NW2F5fDQGstAWxzSmtuDM/w
+      swsDnDzQxKun92+Li2kFXxevrPAxPT2D2+1GWxa5En5Btth4DsPg+P4m/um150DDP//b+/SN
+      zLIBe9BFVeCLsjWxyDyBmhDLC3GqgkFMA/Lagdsl9wPYUWQxyevv9mEpxWtnO8v2hSFyECwe
+      29o9yz/+7W2O72/k3DMHym63SAIQTyyXt3jnyggX++7xvRcPcbK9qWy2BhKA2DCLy2le//VN
+      EisZ/uEbXTTUlP5YhQQgNpTWmruTUX74bh8du8N89/mOkp44lQDEprCU4r2eUd6/NsG3nj3A
+      6UM7S3K3SAIQm2phOc1Pzt9hfmGFH5w9VnL3KUsAYtNprRm5H+e/fnuLlnAVf/niYfxeV7GX
+      BUgAYgtZluJC3z1+dXmIc186wNOHm4t+j7IEILbcUjLLT87f5kFsmb9++Qi7G4v31AoJQBTN
+      6HScH/3mFo21Ab734iEq/Vt/W2bhL8qenyJvBpidnCS8sxmfqXBWVMujEcUTsZTi0s1Jfnl5
+      ePVG/c7WLX1dVIHvCc4xMtqPSweILK9QHfSTWEpzvPMQSh6NKDZAMp3jZxf6GZyK8ndf69qy
+      h3kV/Kb4sYlR8nkP6DROX5Aan4m7KiSPRhQbamouwX++e4OaSh9/8/LRTX9ahRwDiJKjteby
+      nfu8cXGAl07s4ZVTe3E4NmdrIAGIkpXO5nnzwwFuDM/y2tc6ObirbsP/DglAlDStNbPxFV5/
+      tw+X0+S1s8eoqfRt2NeXAERZ0FpzbWiG/z5/e/VJFd1tuDfgSRUSgCgrmWyetz4e5PbYPP94
+      7gRNocon+noSgChLD6JL/Osvejm4q45vPXsAn+fxZoskAFG2sjmL96+Pc/7qGN9+voNTB5rW
+      PVskAYiyt7ic5sfnbxNdTPKDs500r+Ol4hKA2BbW3ojz+rs32d9cy3ef7yho5FoCENuK0prz
+      V8f4dc8o555p5+nDLX/yIlrBAWitAAOlFI7f288yDEMCECUnsZLhfz64w+Rcgr//ehct9VWP
+      nC0q+MFYEyN9ZDM+VqwUTnclQTeEm1vxuhwopSQAUZLGZxb4j1/doDlcxfdfOkzF514mXlAA
+      VmaZnuvXIO2k5UgbD8ZnMJ0mR450YLD6xyUAUaq01nx0c5I3Pxzg1afbeaGz9eFu0Tp2gfKk
+      04rI/AzhhgZchiarnfg8TtkFEmUhmc7x0wv9DE/F+MHZY+zbWSsHwcJetNZMziX44Xs3qQl4
+      JQBhT5ZS9AxMSwDC3or7TAohikwCELYmAQhbkwCErUkAwtYkAGFrEoCwtYJe3aGVYmxkiGB9
+      A3OT96nb0YzfCQ5vAJ9bzv+L8lXYFsAw8LidrMTnSKQVK4kYg2NTeFyrb4kXolwVFIDWOZKp
+      LDnLSbDCIJV3sDMcJJnJyxVgUdZkFELYmhwEC1uTAIStSQDC1iQAYWsSgLA1CUDYmgQgbE0C
+      ELYmAQhbkwCErRU4DWoxMtiPwsFyOoMvEKLKpalpasYv06CijBU8Der1+bGSKZrb9pBciDMX
+      X8LjlGlQUd4K2gKgFdmsRdP+A8RmZ2jv2I/Hocnk8vg9LolAlC2ZBhW2JgfBwtYK2wUqU/n5
+      eZKXPsYMh3HWhTDr6jADATBNDNliCbZ5AI6qKpzNO7HmIyRHRshHIqjlZchbGG43Zij0MAxn
+      uA5nXRiztgZMEwzjkW8UEduLbY8BVCqFFYuRj0SxIhHy8/PkIxGsWBydz2OYDsyaGpzh8Gog
+      9fU4Q7WYdXU4vN5iL19sENsG8Mc8/DgsCyse/yyMKNZaINEoOpsFw8ARCOAMh1cjqa3FDNfh
+      DIVwVD36fVSi9EgA66S1Bq1BKdTSEvlI5HeBRKNYsThqKQGmE8PjxhkK4ayre7ibZVZXY9bU
+      YLge783mYmNJAJtAaw35PCqTxYpGyc/PY0Uj5OfmseILWPE4GGC43Jg11avHIvVhnKE6zFAt
+      ZlUVjoqKYv8zbEECKIK1QHQ2h7W4uLqbNT+PFY2u/kok0Ok0hseLI1CBMxRaPZMVDv8ukEBA
+      zmRtAAmgRGnLQmcyqJWV1d2sud8PZAm1tIThdmH4/ThrazHrQqtbkHAdZnUNjgo/Do+n2P+M
+      klfwe4KnJsaoDNUzN3WPUFMLAbeBdvnwukwJoAi0UquBJJNY8YXVLUgksnqgvriIXllBK43D
+      78MMBj87BvnsekgohMPvx/B6MRz2vhZacACLsQjJ1AIT0xmamyqJxlY4erQDtALkPcGlSOdy
+      qJWV1d2sz53JUskUOpPB8Psxg1WYtbWrp3pra3E2NmDW1tpiF6ugAJSV5dMrPbTu2ctCdJaM
+      I0BdhUmwficBr0u2AGVKK4VaWUElEuSjMfJzc1jRKLn791GJBJ7Dh/F3d+Nqad62McgxgHgk
+      lUySvnmLVG8v+WgMz742fE91425txXBunwECCUB8IZ3Pk+7vJ3XlU7LjE7h3t+I/fRrPwQNl
+      H4MEINZFWxaZu4OkPv2UzNAwrpZm/E+fwXvo0OqQYZldAZcAxGPTWpO7d4/k5Stk7tzBrKnF
+      130K3/EuHD5fsZdXEAlAbAitNPnpaZKffEKq7yZmTTX+7lN4u7pWR9BLlAQgNpxWCisaI9XT
+      Q+pGH4bLhffoEXwnT+AMhYq9vD8gAYhNpbXGisVI9V4ldfUqWBa+EyfwnjiOs76+6McMEoDY
+      MqsxxMn095Pq6UVl0ngPHcJ77CiulpaiXJWWAETRWMvLpG/eJPVpL1Y8jqfjIP6nunE1N2/Z
+      6VUJQJQEa3mZzJ1+0n03yc3M4Glrw3fqJO7WXRhu96b9vRKAKDkqmyV7d5DklStkJyZw796N
+      /8xp3Pv24djgGAobhlOKsZG7GKaThcQylTUNVDoVleEm/G6ZBhWbR+dyZAaHSPX2kh2fwLWj
+      CV93N54D7Rtyb3bB06Az01M4sllcOxoZ6xvEcLno6jyMVjINKraG1prc+MTqhbeBflytrfhP
+      P4Vn//7HvsW0wGnQHHcHBqhr3EF0dpb6nbvwmQrl9FEh06CiCLRlkRkYIHnlU7Lj47ibm/Gf
+      OY2no2NdB9ByDCDK3u+2DJfJ9A9g1oVWr0IfP/6Fd8VJAGJb0VqTm5oi+cll0n03cYZq8XV3
+      4+vqfOSDBiQAsW1ppbAiUZI9PaTXRjK6OvGdOI6zthaQAIRNaK2xolFSvb2krl4DrfGdPCEB
+      CPvRWmPFF8jcviUBCHuz9zMxhO1JAMLWJABhaxKAsLWCAtBaE41G0VoxMjhAPLFCPpMmk5O3
+      Q4ryVuAWQBNfWIRsnJm4RXo5xu27ozhNQ16RKspawbtAiXiE2XiOcJXFdCRFdcBDOmvhsPnD
+      VUV5K3gc2rLyGIaJ1uoPzvkbhiHXAUTZKmhu1DAMnM61eWv5iS+2D/nfLGxNAhC2JgEIW5MA
+      hK1JAMLWJABhaxKAsDUJQNiaBCBsrcBpUMXA3UFUZpkb168zMT1HdHaGZFYG4UR5KygAw3BQ
+      VVlJMhan9fABIvfvMz4dwetyyDSoKGsFzQJppViIzmHWNxIZGKZ57x78piKZyT98UbYQ5Uie
+      CiFsTQ6Cha1JAMLWJABhaxKAsDUJQNiaBCBsTQIQtiYBCFuTAIStrSsArRUz0/dZTmWw8jly
+      ltqsdQmxJda3BcgtMn5/kcXYPINDo2gNSkkEonytKwBLuaiuyPEgsoTpAKWeeIxIiKJa1zCc
+      1orFhUUqKisxDbBw4DIdMgwnypZMgwpbk7NAwtYkAGFrEoCwNQlA2JoEIGxNAhC2JgEIWyvo
+      sShrcssxbg5P4AuEqHIpappa8Lvl/L8oX+vaAmRXkjS37SG5EGcuvozHKRsQUd7WOQphMTYy
+      RrhpBx6HJu9w4/e45EqwKFtPNAqhtUYphVJK3he8TlprDMMo9jLKzkZ/bhsyCyQBrJ98Zo9n
+      oz+3DflKJfmN1BZjI4PMzMeLvZJHKsnPDIjOPWBwZJwn/7G4OTb6cyvN78JGMEx8HjepdKbY
+      KykrVcEgHo+72MvYMts2AG3lWUllKNEftCVr8t4E2Vyu2MvYMv8HVHTIctAp6kQAAAAASUVO
+      RK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Number of Earners according to education level' width='192'>
+      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
+      VqDlxdv6L32SrEL5XKj8AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Saving according to Number of earners' width='192'>
+      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
+      EgAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
