@@ -32,13 +32,14 @@ The primary objectives of this analysis are:
 - To identify trends that can inform financial planning strategies.
 
 ## Insights and Recommendations
+
 ### Category 1: Income vs. Expenses
 - **Main Insight 1:** Households with a single earning member tend to have higher expenses relative to income.
 - **Main Insight 2:** Rent/EMI payments significantly impact disposable income.
 - **Main Insight 3:** Higher-educated households tend to have higher income levels.
 - **Main Insight 4:** Some households exhibit negative savings, indicating financial distress.
 
-![Visualization: Income vs. Expenses Distribution](#)
+[![Visualization: Income vs. Expenses Distribution](#)](https://public.tableau.com/views/ImpactofExpensesonIncomeAccordingtoNumberofEarners/ImpactofexpenseonIncomeAccordingtoNumberofearners?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ### Category 2: Family Size and Financial Stability
 - **Main Insight 1:** Larger households often have higher expenses but not necessarily higher income.
@@ -46,15 +47,18 @@ The primary objectives of this analysis are:
 - **Main Insight 3:** Rent/EMI payments are more burdensome for single-income families.
 - **Main Insight 4:** Financial stability improves with diversified income sources.
 
-![Visualization: Family Size vs. Savings Rate](#)
+[![Visualization: Family Size vs. Savings Rate](#)](https://public.tableau.com/views/HouseholdAnalysisavgmonthlysavingaccordingtofamilysize/AvgMonthlySavingaccordingtofamilysize?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ### Category 3: Education and Earnings
 - **Main Insight 1:** Graduate-level education correlates with higher household income.
 - **Main Insight 2:** Illiterate households report lower earnings and higher expense burdens.
+  
+  [![Visualization: Impact of Rent on Income by Education Level](#)](https://public.tableau.com/views/ImpactofRentonIncomeAccordingtoEducationLevels/ImpactofRentonIncomeAccordingtoEducationLevels?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+  
 - **Main Insight 3:** Undergraduates have varied earnings depending on household size.
 - **Main Insight 4:** Education level affects the number of earning members in a household.
-
-![Visualization: Education Level vs. Household Income](#)
+  
+  [![Visualization: Number of Earners by Education Level](#)](https://public.tableau.com/views/HouseholdAnalysisNumbberofearnersacctoeducationlevel/NumberofEarnersaccordingtoeducationlevel?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ### Category 4: Savings and Future Planning
 - **Main Insight 1:** Households with low EMI/Rent have better savings potential.
@@ -62,17 +66,24 @@ The primary objectives of this analysis are:
 - **Main Insight 3:** Higher education correlates with better financial planning.
 - **Main Insight 4:** Some high-income households still exhibit poor savings behavior.
 
-![Visualization: Savings Rate by Household Type](#)
+[![Visualization: Savings Rate by Household Type](#)](https://public.tableau.com/views/HouseholdAnalysisavgmonthlysavingaccordingtonumberofearners/SavingaccordingtoNumberofearners?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
 
 ## Data Structure & Initial Checks
 The dataset consists of the following columns:
-- `Mthly_HH_Income` (Monthly Household Income)
-- `Mthly_HH_Expense` (Monthly Household Expenses)
-- `No_of_Fly_Members` (Number of Family Members)
-- `Emi_or_Rent_Amt` (Monthly EMI or Rent Amount)
-- `Annual_HH_Income` (Annual Household Income)
-- `Highest_Qualified_Member` (Highest Qualification in Household)
-- `No_of_Earning_Members` (Number of Earning Members)
+
+
+| Column                    | Description                        |
+|---------------------------|------------------------------------|
+| `Mthly_HH_Income`         | Monthly Household Income           |
+| `Mthly_HH_Expense`        | Monthly Household Expenses         |
+| `No_of_Fly_Members`       | Number of Family Members           |
+| `Emi_or_Rent_Amt`         | Monthly EMI or Rent Amount         |
+| `Annual_HH_Income`        | Annual Household Income            |
+| `Highest_Qualified_Member`| Highest Qualification in Household |
+| `No_of_Earning_Members`   | Number of Earning Members          |
+
+![Screenshot_1-2-2025_181252_dbdiagram io](https://github.com/user-attachments/assets/06964b2f-4da3-4422-8b47-e99738b19b07)
 
 ## Executive Summary
 This analysis reveals key insights about household financial stability. Households with multiple earning members generally exhibit lower financial strain, while single-income families face higher expenses relative to income. Education plays a significant role in earnings potential, and EMI/Rent payments significantly affect savings potential. These findings can inform policies to improve financial planning and support systems for vulnerable households.
@@ -84,7 +95,8 @@ This analysis reveals key insights about household financial stability. Househol
 - Support education initiatives to improve long-term earning potential.
 
 ## Technical Details
-This analysis was conducted using Python (Pandas for data processing, Matplotlib/Seaborn for visualization). SQL queries were used to inspect and clean data, and an interactive Tableau dashboard provides deeper insights.
+This analysis was conducted using Excel (Power Query for data processing) [Book1.xlsx](https://github.com/user-attachments/files/18629570/Book1.xlsx) 
+and an interactive Tableau dashboard provides deeper insights. You can explore the Tableau dashboard [here](https://public.tableau.com/app/profile/amr.salah6779/viz/HouseholdAnalysis_17384364951600/Dashboard1).
 
 ## Assumptions and Caveats
 - Missing values in education were assumed to be "Illiterate."
