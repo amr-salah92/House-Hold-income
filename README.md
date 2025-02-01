@@ -39,7 +39,8 @@ The primary objectives of this analysis are:
 - **Main Insight 3:** Higher-educated households tend to have higher income levels.
 - **Main Insight 4:** Some households exhibit negative savings, indicating financial distress.
 
-[![Visualization: Income vs. Expenses Distribution](#)](https://public.tableau.com/views/ImpactofExpensesonIncomeAccordingtoNumberofEarners/ImpactofexpenseonIncomeAccordingtoNumberofearners?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+![Impact of expense on Income According to Number of earners ](https://github.com/user-attachments/assets/ee19c022-0ac0-4b2f-9f20-43741e16d9a7)
+
 
 ### Category 2: Family Size and Financial Stability
 - **Main Insight 1:** Larger households often have higher expenses but not necessarily higher income.
@@ -47,18 +48,20 @@ The primary objectives of this analysis are:
 - **Main Insight 3:** Rent/EMI payments are more burdensome for single-income families.
 - **Main Insight 4:** Financial stability improves with diversified income sources.
 
-[![Visualization: Family Size vs. Savings Rate](#)](https://public.tableau.com/views/HouseholdAnalysisavgmonthlysavingaccordingtofamilysize/AvgMonthlySavingaccordingtofamilysize?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+![Avg Monthly Saving according to family size](https://github.com/user-attachments/assets/d8604c7e-eefa-4ec0-b259-ee685d28c538)
+
 
 ### Category 3: Education and Earnings
 - **Main Insight 1:** Graduate-level education correlates with higher household income.
 - **Main Insight 2:** Illiterate households report lower earnings and higher expense burdens.
   
-  [![Visualization: Impact of Rent on Income by Education Level](#)](https://public.tableau.com/views/ImpactofRentonIncomeAccordingtoEducationLevels/ImpactofRentonIncomeAccordingtoEducationLevels?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+![Impact of Rent on Income According to Education Levels](https://github.com/user-attachments/assets/58edab14-b66b-4a6d-94d4-e63cee5686b6)
+
   
 - **Main Insight 3:** Undergraduates have varied earnings depending on household size.
 - **Main Insight 4:** Education level affects the number of earning members in a household.
   
-  [![Visualization: Number of Earners by Education Level](#)](https://public.tableau.com/views/HouseholdAnalysisNumbberofearnersacctoeducationlevel/NumberofEarnersaccordingtoeducationlevel?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+![Number of Earners according to education level](https://github.com/user-attachments/assets/ba45126c-2448-4d95-81e7-72699c772df2)
 
 ### Category 4: Savings and Future Planning
 - **Main Insight 1:** Households with low EMI/Rent have better savings potential.
@@ -66,7 +69,7 @@ The primary objectives of this analysis are:
 - **Main Insight 3:** Higher education correlates with better financial planning.
 - **Main Insight 4:** Some high-income households still exhibit poor savings behavior.
 
-[![Visualization: Savings Rate by Household Type](#)](https://public.tableau.com/views/HouseholdAnalysisavgmonthlysavingaccordingtonumberofearners/SavingaccordingtoNumberofearners?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+![Saving according to Number of earners](https://github.com/user-attachments/assets/ff211c94-919b-4809-b741-ae057c827f3f)
 
 
 ## Data Structure & Initial Checks
