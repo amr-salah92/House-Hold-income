@@ -39,7 +39,7 @@ The primary objectives of this analysis are:
 - **Main Insight 3:** Higher-educated households tend to have higher income levels.
 - **Main Insight 4:** Some households exhibit negative savings, indicating financial distress.
 
-![Impact of expense on Income According to Number of earners ](https://github.com/user-attachments/assets/ee19c022-0ac0-4b2f-9f20-43741e16d9a7)
+![Impact of expense on Income According to Number of earners ](https://github.com/user-attachments/assets/164f5e4a-7687-40c8-b9dc-2b9cd4c0800d)
 
 
 ### Category 2: Family Size and Financial Stability
@@ -48,20 +48,21 @@ The primary objectives of this analysis are:
 - **Main Insight 3:** Rent/EMI payments are more burdensome for single-income families.
 - **Main Insight 4:** Financial stability improves with diversified income sources.
 
-![Avg Monthly Saving according to family size](https://github.com/user-attachments/assets/d8604c7e-eefa-4ec0-b259-ee685d28c538)
+
 
 
 ### Category 3: Education and Earnings
 - **Main Insight 1:** Graduate-level education correlates with higher household income.
 - **Main Insight 2:** Illiterate households report lower earnings and higher expense burdens.
-  
-![Impact of Rent on Income According to Education Levels](https://github.com/user-attachments/assets/58edab14-b66b-4a6d-94d4-e63cee5686b6)
+
+![Impact of Rent on Income According to Education Levels](https://github.com/user-attachments/assets/202fb9c1-3306-41e3-9742-57848691fbac)
 
   
 - **Main Insight 3:** Undergraduates have varied earnings depending on household size.
 - **Main Insight 4:** Education level affects the number of earning members in a household.
   
-![Number of Earners according to education level](https://github.com/user-attachments/assets/ba45126c-2448-4d95-81e7-72699c772df2)
+
+![Number of Earners according to education level](https://github.com/user-attachments/assets/15bd7d49-f997-42d9-8fe1-8abe16371ffd)
 
 ### Category 4: Savings and Future Planning
 - **Main Insight 1:** Households with low EMI/Rent have better savings potential.
@@ -69,7 +70,8 @@ The primary objectives of this analysis are:
 - **Main Insight 3:** Higher education correlates with better financial planning.
 - **Main Insight 4:** Some high-income households still exhibit poor savings behavior.
 
-![Saving according to Number of earners](https://github.com/user-attachments/assets/ff211c94-919b-4809-b741-ae057c827f3f)
+
+![Saving according to Number of earners](https://github.com/user-attachments/assets/ae134988-9c76-4a1f-88e6-02b630ab47f0)
 
 
 ## Data Structure & Initial Checks
@@ -99,7 +101,7 @@ This analysis reveals key insights about household financial stability. Househol
 
 ## Technical Details
 This analysis was conducted using Excel (Power Query for data processing) [Book1.xlsx](https://github.com/user-attachments/files/18629570/Book1.xlsx) 
-and an interactive Tableau dashboard provides deeper insights. You can explore the Tableau dashboard [here](https://public.tableau.com/app/profile/amr.salah6779/viz/HouseholdAnalysis_17384364951600/Dashboard1).
+and an interactive Tableau dashboard provides deeper insights. You can explore the Tableau dashboard [here](https://public.tableau.com/views/HouseholdAnalysisDashboard/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## Assumptions and Caveats
 - Missing values in education were assumed to be "Illiterate."
